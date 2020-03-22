@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/plist/plist",
+    "pages/about/about",
+    "pages/search/search",
+    "pages/info/info"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Conan",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#aaaaaa",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/tabbar/about_cur.png",
+        "iconPath": "images/tabbar/about.png",
+        "pagePath": "pages/index/index",
+        "text": "主页"
+      },
+      {
+        "selectedIconPath": "images/tabbar/basics_cur.png",
+        "iconPath": "images/tabbar/basics.png",
+        "pagePath": "pages/plist/plist",
+        "text": "作品"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

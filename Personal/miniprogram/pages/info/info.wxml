@@ -1,0 +1,27 @@
+<view class="padding-xs flex align-center">
+  <view class="flex-sub text-center">
+    <view class="text-lg padding">
+      <text class="text-black">{{model.title}}</text>
+    </view>
+  </view>
+</view>
+<view class="padding-xs flex align-center">
+  <view class="flex-sub text-center">
+    <view class="text-sm padding-bottom">
+      <image class="cu-avatar sm round bg-white" src="cloud://qsp-i1d4d.7173-qsp-i1d4d-1300844693/images/tmp_c7dc3d1c862d2afb7f2929f7bbb631553b97008d608d4e41.jpg"></image>
+      <text class="text-grey"> by Conan / {{model.creatDate}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="meimage" wx:for="{{model.picUrls}}">
+  <image src="{{item}}" mode="widthFix"></image>
+</view>
+
+<view class="cu-bar bg-black">
+  <view class="action sub-title">
+    <text class="text-xl text-bold text-blue">Lost</text><text>Conan</text>
+    <text class="text-ABC text-blue">Conan</text>
+    <!-- last-child选择器-->
+  </view>
+</view>

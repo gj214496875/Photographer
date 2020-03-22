@@ -1,0 +1,65 @@
+<view class="UCenter-bg bg-black">
+  <image src="../../images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+</view>
+<view class="padding flex text-left  bg-white shadow-warp">
+  <view class="basis-xs  margin-xs radius" bindtap="admin">
+    <image class="cu-avatar xl round bg-white" src="{{user.url}}"></image>
+  </view>
+  <view class="basis-xl padding-left-lg  radius">
+    <view class="margin-top-sm text-xl text-grey">Photographer Conan</view>
+    <view class="margin-top-sm text-sm">{{user.signature}}</view>
+    <view class="margin-top-sm text-xs text-gray">
+      <text class="cuIcon-locationfill"></text> {{user.city}}</view>
+  </view>
+
+</view>
+
+<view class="padding-xl">
+  <form bindsubmit="formSubmit">
+    <view class="cu-form-group">
+      <input password style='text-align:center' type="number" name="password"></input>
+    </view>
+    <view class="margin-top-xl flex flex-direction">
+      <button class="cu-btn bg-blue lg" form-type="submit">登录</button>
+    </view>
+  </form>
+</view>
+<view class="cu-modal {{admin?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">后台管理系统</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      <view class="cu-list grid col-5 no-border">
+        <view class="cu-item">
+          <navigator class="content" url="/pages/admin/admin?category=Portrait" hover-class="none">
+            <text>人像摄影</text>
+          </navigator>
+        </view>
+        <view class="cu-item">
+          <navigator class="content" url="/pages/admin/admin?category=Documentary" hover-class="none">
+            <text>纪实摄影</text>
+          </navigator>
+        </view>
+        <view class="cu-item">
+          <navigator class="content" url="/pages/admin/admin?category=StillLife" hover-class="none">
+            <text>静物摄影</text>
+          </navigator>
+        </view>
+        <view class="cu-item">
+          <navigator class="content" url="/pages/admin/admin?category=Landscape" hover-class="none">
+            <text>风光摄影</text>
+          </navigator>
+        </view>
+        <view class="cu-item">
+          <navigator class="content" url="/pages/userInfo/userInfo" hover-class="none">
+            <text>人物信息</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

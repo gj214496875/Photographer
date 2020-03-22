@@ -1,0 +1,11 @@
+/* miniprogram/pages/info.wxss */
+page{
+ background: white
+}
+.meimage {
+  max-width: 100%;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+}

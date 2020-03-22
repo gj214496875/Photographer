@@ -1,0 +1,5 @@
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+page{
+ background: wihte(0, 0, 0, 0.800)
+}

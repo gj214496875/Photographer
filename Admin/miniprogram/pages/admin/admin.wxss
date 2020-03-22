@@ -1,0 +1,21 @@
+/* miniprogram/pages/admin/admin.wxss */
+
+.round-click{
+    height: 60rpx;
+    width: 60rpx;
+    background-color: #0081ff;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 50rpx;
+    right: 50rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+.round-click text{
+    font-size: 32rpx;
+    max-width: 80rpx;
+    color: #fff;
+    text-align: center;
+}

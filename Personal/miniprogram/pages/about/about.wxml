@@ -1,0 +1,19 @@
+
+<view class='margin-lr-xl margin-top-xl bg-white padding-xl radius shadow-lg'>
+  <view class="flex flex-sub flex-direction ">
+    <view class=' radius shadow-lg'>
+      <view class='text-center margin-bottom text-lg  text-grey'>简介</view>
+      <view class='text-center'>
+        <view class='margin-top-sm'>将喜欢的瞬间记录下来</view>
+        <view class='margin-top-sm'>会让我有一种愉悦感</view>
+        <view class='margin-top-sm'>因此我成为了一名摄影爱好者</view>
+        <view class='margin-top-sm'>个人喜欢人像摄影和纪实摄影</view>
+        <view class='margin-top-sm text-grey'>--------------------------------------------------</view>
+        <view class='margin-top-sm'>现约拍免费</view>
+        <view class='margin-top-sm'>后期修图视情况而定</view>
+        <view class='margin-top-sm'>有约拍或修图需求</view>
+        <view class='margin-top-sm'>皆可以与客服联系</view>
+      </view>
+    </view>
+  </view>
+</view>

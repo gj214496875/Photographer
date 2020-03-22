@@ -1,0 +1,27 @@
+<view class="cu-card case" wx:for="{{works}}">
+  <view class="cu-item shadow">
+    <view class="image" bindtap="showPic" data-model="{{item}}">
+      <image src="{{item.firstUrl}}" mode="widthFix"></image>
+      <view class="cu-tag bg-blue">{{item.category}}</view>
+      <view class="cu-bar bg-shadeBottom">
+        <text class="cuIcon-locationfill"> {{item.city}}</text>
+      </view>
+    </view>
+    <view class="cu-list menu-avatar" bindtap="showProfile" data-profile="{{item.profile}}">
+      <view class="cu-item">
+        <view class="padding-left-xl  flex-sub  ">
+          <view class="justify-between align-center flex ">
+            <text class="text-grey">{{item.title}}</text>
+            <text class="text-gray text-sm padding-right-lg">{{item.creatDate}}</text>
+          </view>
+          <view class="margin-top-xs flex">
+            <text class="text-cut text-sm text-gray">{{item.profile}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- <view class="round-click">
+  <navigator url="/pages/search/search"><text class="cuIcon-search"></text></navigator>
+</view> -->

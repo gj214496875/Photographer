@@ -1,0 +1,19 @@
+<view class="cu-list menu-avatar">
+  <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{works}}" wx:key bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
+    <view class="cu-avatar radius lg">
+      <text>{{index+1}}</text>
+    </view>
+    <view class="content">
+      <view class="text-grey">{{item.title}}</view>
+      <view class="text-gray text-sm">
+        <text class="cuIcon-calendar text-gray"></text> {{item.creatDate}}</view>
+    </view>
+    <view class="move">
+      <view class="bg-grey" bindtouchend="edit">修改</view>
+      <view class="bg-red" bindtouchend="del" data-workid="{{item._id}}" data-urls="{{item.picUrls}}">删除</view>
+    </view>
+  </view>
+</view>
+<view class="round-click">
+  <navigator url="/pages/upload/upload?category={{category}}"><text class="cuIcon-add"></text></navigator>
+</view>
